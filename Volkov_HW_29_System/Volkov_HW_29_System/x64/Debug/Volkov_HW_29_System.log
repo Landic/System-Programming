@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\User\Desktop\Volkov_HW_29_System\Volkov_HW_29_System\main.cpp(4,1): warning C4005: '_UNICODE': macro redefinition
+C:\Users\User\Desktop\Volkov_HW_29_System\Volkov_HW_29_System\main.cpp(4,1): message : '_UNICODE' previously declared on the command line
+  Volkov_HW_29_System.vcxproj -> C:\Users\User\Desktop\Volkov_HW_29_System\x64\Debug\Volkov_HW_29_System.exe
