@@ -1,4 +1,4 @@
-// Volkov_System_Programming.cpp : Defines the entry point for the application.
+п»ї// Volkov_System_Programming.cpp : Defines the entry point for the application.
 //
 
 #include "framework.h"
@@ -17,7 +17,7 @@ BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 
-int APIENTRY wWinMain(_In_ HINSTANCE hInstance,      // Главная функция там запускается цикл обработки сообщений
+int APIENTRY wWinMain(_In_ HINSTANCE hInstance,      // Р“Р»Р°РІРЅР°СЏ С„СѓРЅРєС†РёСЏ С‚Р°Рј Р·Р°РїСѓСЃРєР°РµС‚СЃСЏ С†РёРєР» РѕР±СЂР°Р±РѕС‚РєРё СЃРѕРѕР±С‰РµРЅРёР№
                      _In_opt_ HINSTANCE hPrevInstance,
                      _In_ LPWSTR    lpCmdLine,
                      _In_ int       nCmdShow)
@@ -62,7 +62,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,      // Главная функция там запу
 //
 //  PURPOSE: Registers the window class.
 //
-ATOM MyRegisterClass(HINSTANCE hInstance) // эта функция возвращает значение идентифицирующее зарегистрированный класс окна
+ATOM MyRegisterClass(HINSTANCE hInstance) // СЌС‚Р° С„СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёС†РёСЂСѓСЋС‰РµРµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹Р№ РєР»Р°СЃСЃ РѕРєРЅР°
 {
     WNDCLASSEXW wcex;
 
@@ -93,8 +93,8 @@ ATOM MyRegisterClass(HINSTANCE hInstance) // эта функция возвращает значение иде
 //        In this function, we save the instance handle in a global variable and
 //        create and display the main program window.
 //
-BOOL InitInstance(HINSTANCE hInstance, int nCmdShow) // Запоминает описателя экземпляра приложения и создание главного окна приложения.
-// В этой функции мы запоминаем описатель экземпляра приложения в глобальной переменной и создаем главное окно приложения
+BOOL InitInstance(HINSTANCE hInstance, int nCmdShow) // Р—Р°РїРѕРјРёРЅР°РµС‚ РѕРїРёСЃР°С‚РµР»СЏ СЌРєР·РµРјРїР»СЏСЂР° РїСЂРёР»РѕР¶РµРЅРёСЏ Рё СЃРѕР·РґР°РЅРёРµ РіР»Р°РІРЅРѕРіРѕ РѕРєРЅР° РїСЂРёР»РѕР¶РµРЅРёСЏ.
+// Р’ СЌС‚РѕР№ С„СѓРЅРєС†РёРё РјС‹ Р·Р°РїРѕРјРёРЅР°РµРј РѕРїРёСЃР°С‚РµР»СЊ СЌРєР·РµРјРїР»СЏСЂР° РїСЂРёР»РѕР¶РµРЅРёСЏ РІ РіР»РѕР±Р°Р»СЊРЅРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№ Рё СЃРѕР·РґР°РµРј РіР»Р°РІРЅРѕРµ РѕРєРЅРѕ РїСЂРёР»РѕР¶РµРЅРёСЏ
 {
    hInst = hInstance; // Store instance handle in our global variable
 
@@ -122,7 +122,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow) // Запоминает описателя экз
 //  WM_DESTROY  - post a quit message and return
 //
 //
-LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) // обеспечивает обработку сообщений для основного окна программы
+LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) // РѕР±РµСЃРїРµС‡РёРІР°РµС‚ РѕР±СЂР°Р±РѕС‚РєСѓ СЃРѕРѕР±С‰РµРЅРёР№ РґР»СЏ РѕСЃРЅРѕРІРЅРѕРіРѕ РѕРєРЅР° РїСЂРѕРіСЂР°РјРјС‹
 {
     switch (message)
     {
