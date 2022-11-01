@@ -1,0 +1,8 @@
+﻿  Volkov_HW_31_System.cpp
+C:\Users\User\Desktop\Volkov_HW_31_System\Volkov_HW_31_System\Volkov_HW_31_System.cpp(43,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_31_System\Volkov_HW_31_System\Volkov_HW_31_System.cpp(158,24): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_31_System\Volkov_HW_31_System\Volkov_HW_31_System.cpp(163,28): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_31_System\Volkov_HW_31_System\Volkov_HW_31_System.cpp(168,32): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_31_System\Volkov_HW_31_System\Volkov_HW_31_System.cpp(173,36): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_31_System\Volkov_HW_31_System\Volkov_HW_31_System.cpp(178,41): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+  Volkov_HW_31_System.vcxproj -> C:\Users\User\Desktop\Volkov_HW_31_System\x64\Debug\Volkov_HW_31_System.exe
