@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\User\Desktop\Volkov_HW_34_System\Volkov_HW_34_System\main.cpp(18,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_34_System\Volkov_HW_34_System\main.cpp(20,10): warning C4244: 'return': conversion from 'INT_PTR' to 'int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_34_System\Volkov_HW_34_System\main.cpp(16,6): warning C4101: 'Msg': unreferenced local variable
+C:\Users\User\Desktop\Volkov_HW_34_System\Volkov_HW_34_System\main.cpp(17,13): warning C4101: 'wcl': unreferenced local variable
+  Volkov_HW_34_System.vcxproj -> C:\Users\User\Desktop\Volkov_HW_34_System\x64\Debug\Volkov_HW_34_System.exe
