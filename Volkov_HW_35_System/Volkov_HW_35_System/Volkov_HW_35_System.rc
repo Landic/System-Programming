@@ -1,0 +1,164 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 459, 302
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,390,271,50,14
+    CONTROL         "Бьёрн Страуструп",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,18,78,10
+    CONTROL         "Бил Гейтс",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,18,36,49,10
+    CONTROL         "Марк Цукерберг",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,18,54,72,10
+    GROUPBOX        "Кто создал С++",IDC_STATIC,12,6,108,66
+    CONTROL         "3",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,90,20,10
+    CONTROL         "4",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,18,108,20,10
+    CONTROL         "6",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,18,126,20,10
+    CONTROL         "Человек",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,162,45,10
+    GROUPBOX        "Ты кто?",IDC_STATIC,12,150,108,66
+    CONTROL         "Рыба",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,18,180,33,10
+    CONTROL         "Птица",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,18,198,37,10
+    GROUPBOX        "Лев может убить человека?",IDC_STATIC,12,222,108,66
+    CONTROL         "Да",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,234,25,10
+    CONTROL         "Нет",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,18,252,29,10
+    CONTROL         "Не знаю",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,18,270,44,10
+    GROUPBOX        "Популярный Язык в Европе",IDC_STATIC,138,6,108,66
+    GROUPBOX        "Где зарабатывают деньги",IDC_STATIC,138,78,108,66
+    GROUPBOX        "Кто создал YouTube",IDC_STATIC,144,150,102,66
+    GROUPBOX        "Что из этого видеокарта",IDC_STATIC,138,222,108,66
+    GROUPBOX        "Кто основатели Microsoft",IDC_STATIC,264,6,108,66
+    GROUPBOX        "Какие это цвета",IDC_STATIC,264,78,108,66
+    GROUPBOX        "2+2",IDC_STATIC,12,78,108,66
+    CONTROL         "Английский",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON | WS_GROUP,144,18,55,10
+    CONTROL         "Китайский",IDC_RADIO14,"Button",BS_AUTORADIOBUTTON,144,36,52,10
+    CONTROL         "Японский",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON,144,54,48,10
+    CONTROL         "Выпрашивают на улице",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,144,90,97,10
+    CONTROL         "На работе",IDC_RADIO17,"Button",BS_AUTORADIOBUTTON,144,108,51,10
+    CONTROL         "Сидя дома",IDC_RADIO18,"Button",BS_AUTORADIOBUTTON,144,126,52,10
+    CONTROL         "Билл Гейтс",IDC_RADIO19,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,144,162,53,10
+    CONTROL         "Я",IDC_RADIO20,"Button",BS_AUTORADIOBUTTON,144,180,21,10
+    CONTROL         "Джавед Карим",IDC_RADIO21,"Button",BS_AUTORADIOBUTTON,144,198,66,10
+    CONTROL         "RTX 3090",IDC_RADIO22,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,144,234,47,10
+    CONTROL         "Xiaomi Pro Ultra Max 2000",IDC_RADIO23,"Button",BS_AUTORADIOBUTTON,144,252,99,10
+    CONTROL         "IPhone 14 Pro Max",IDC_RADIO24,"Button",BS_AUTORADIOBUTTON,144,270,77,10
+    CONTROL         "Билл Гейтс",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,270,18,53,10
+    CONTROL         "Марк Цукерберг",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,30,72,10
+    CONTROL         "Пол Аллен",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,42,66,10
+    CONTROL         "Кевин Систром",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,54,78,8
+    CONTROL         "Фиолетовый",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,270,90,60,8
+    CONTROL         "Желтый",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,102,60,8
+    CONTROL         "Зеленый",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,114,60,8
+    CONTROL         "Розовый",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,126,60,8
+    GROUPBOX        "",IDC_STATIC,375,82,63,56
+    EDITTEXT        IDC_EDIT2,270,162,102,14,ES_AUTOHSCROLL
+    GROUPBOX        "Столица Украины",IDC_STATIC,264,150,114,30
+    EDITTEXT        IDC_EDIT3,270,198,102,14,ES_AUTOHSCROLL
+    GROUPBOX        "Столица Германии",IDC_STATIC,264,186,114,30
+    CONTROL         IDB_BITMAP1,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,384,90,46,18
+    CONTROL         IDB_BITMAP2,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,384,114,46,18
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 452
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "C:\\Users\\User\\Desktop\\1.bmp"
+
+IDB_BITMAP2             BITMAP                  "C:\\Users\\User\\Desktop\\2.bmp"
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
