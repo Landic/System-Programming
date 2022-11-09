@@ -1,4 +1,4 @@
-#include <windows.h>
+п»ї#include <windows.h>
 #include <tchar.h>
 #include "resource.h"
 #include <vector>
@@ -30,56 +30,56 @@ BOOL CALLBACK DlgProc(HWND hWnd, UINT message, WPARAM wp, LPARAM lp)
         hCombo = GetDlgItem(hWnd, IDC_COMBO1);
         hList = GetDlgItem(hWnd, IDC_LIST1);
         hEdit = GetDlgItem(hWnd, IDC_EDIT2);
-        SendMessage(hCombo, CB_ADDSTRING, 0, LPARAM(TEXT("Сумма чисел")));
-        SendMessage(hCombo, CB_ADDSTRING, 0, LPARAM(TEXT("Произведение чисел")));
-        SendMessage(hCombo, CB_ADDSTRING, 0, LPARAM(TEXT("Среднее арифметическое")));
+        SendMessage(hCombo, CB_ADDSTRING, 0, LPARAM(TEXT("РЎСѓРјРјР° С‡РёСЃРµР»")));
+        SendMessage(hCombo, CB_ADDSTRING, 0, LPARAM(TEXT("РџСЂРѕРёР·РІРµРґРµРЅРёРµ С‡РёСЃРµР»")));
+        SendMessage(hCombo, CB_ADDSTRING, 0, LPARAM(TEXT("РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ")));
 
     }
     return TRUE;
     case WM_COMMAND: 
     {
-        if (wp == IDC_BUTTON1) { // если нажата кнопка старт
+        if (wp == IDC_BUTTON1) { // РµСЃР»Рё РЅР°Р¶Р°С‚Р° РєРЅРѕРїРєР° СЃС‚Р°СЂС‚
             float summ = 0;
             int index = SendMessage(hCombo, CB_GETCURSEL, 0, 0);
-            int number = min + rand() % (max - min + 1); // диапозон от 10 до 20 чисел в векторе
-            SendMessage(hList, LB_RESETCONTENT, 0, 0); // очищаем список
-            while (arr.size() <= number) // пока размер вектора не будет равнятся диапозону будет срабатывать блок кода снизу
+            int number = min + rand() % (max - min + 1); // РґРёР°РїРѕР·РѕРЅ РѕС‚ 10 РґРѕ 20 С‡РёСЃРµР» РІ РІРµРєС‚РѕСЂРµ
+            SendMessage(hList, LB_RESETCONTENT, 0, 0); // РѕС‡РёС‰Р°РµРј СЃРїРёСЃРѕРє
+            while (arr.size() <= number) // РїРѕРєР° СЂР°Р·РјРµСЂ РІРµРєС‚РѕСЂР° РЅРµ Р±СѓРґРµС‚ СЂР°РІРЅСЏС‚СЃСЏ РґРёР°РїРѕР·РѕРЅСѓ Р±СѓРґРµС‚ СЃСЂР°Р±Р°С‚С‹РІР°С‚СЊ Р±Р»РѕРє РєРѕРґР° СЃРЅРёР·Сѓ
             {
-                arr.push_back(min2 + rand() % (max2 - min2 + 1)); // генерируем числа
-                if (arr.back() == 0) { // если число равно 0 то удаляем его
+                arr.push_back(min2 + rand() % (max2 - min2 + 1)); // РіРµРЅРµСЂРёСЂСѓРµРј С‡РёСЃР»Р°
+                if (arr.back() == 0) { // РµСЃР»Рё С‡РёСЃР»Рѕ СЂР°РІРЅРѕ 0 С‚Рѕ СѓРґР°Р»СЏРµРј РµРіРѕ
                     arr.pop_back();
                 }
             }
-            for (vector<int>::iterator it = arr.begin(); it != arr.end(); it++) // засовываем числа в строку и отправляем List Box
+            for (vector<int>::iterator it = arr.begin(); it != arr.end(); it++) // Р·Р°СЃРѕРІС‹РІР°РµРј С‡РёСЃР»Р° РІ СЃС‚СЂРѕРєСѓ Рё РѕС‚РїСЂР°РІР»СЏРµРј List Box
             {
-                _stprintf_s(str, TEXT("%d"), *it); // записываем в строку 
-                SendMessage(hList, LB_ADDSTRING, 0, LPARAM(str)); // отправляем в List Box
+                _stprintf_s(str, TEXT("%d"), *it); // Р·Р°РїРёСЃС‹РІР°РµРј РІ СЃС‚СЂРѕРєСѓ 
+                SendMessage(hList, LB_ADDSTRING, 0, LPARAM(str)); // РѕС‚РїСЂР°РІР»СЏРµРј РІ List Box
             }
             switch (index) {
-            case 0: // произведение
+            case 0: // РїСЂРѕРёР·РІРµРґРµРЅРёРµ
                 summ = 1;
                 for (vector<int>::iterator it = arr.begin(); it != arr.end(); it++)
                 {
                     summ *= *it;
                 }
                 break;
-            case 1: // среднее арифметическое
+            case 1: // СЃСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ
                 for (vector<int>::iterator it = arr.begin(); it != arr.end(); it++)
                 {
                     summ += *it;
                 }
                 summ /= number;
-            case 2: // сумма всех чисел
+            case 2: // СЃСѓРјРјР° РІСЃРµС… С‡РёСЃРµР»
                 for (vector<int>::iterator it = arr.begin(); it != arr.end(); it++)
                 {
                     summ += *it;
                 }
                 break;
             }
-            _stprintf_s(str2, TEXT("%.2f"), summ); // сумму записываем во вторую строку 
-            SetWindowText(hEdit, str2); // отправляем строку с суммой в Edit Control
+            _stprintf_s(str2, TEXT("%.2f"), summ); // СЃСѓРјРјСѓ Р·Р°РїРёСЃС‹РІР°РµРј РІРѕ РІС‚РѕСЂСѓСЋ СЃС‚СЂРѕРєСѓ 
+            SetWindowText(hEdit, str2); // РѕС‚РїСЂР°РІР»СЏРµРј СЃС‚СЂРѕРєСѓ СЃ СЃСѓРјРјРѕР№ РІ Edit Control
         }
-        else if (wp == IDC_BUTTON2) { // если нажали кнопку выхода то приложение закрывается
+        else if (wp == IDC_BUTTON2) { // РµСЃР»Рё РЅР°Р¶Р°Р»Рё РєРЅРѕРїРєСѓ РІС‹С…РѕРґР° С‚Рѕ РїСЂРёР»РѕР¶РµРЅРёРµ Р·Р°РєСЂС‹РІР°РµС‚СЃСЏ
             EndDialog(hWnd, 0);
         }
     }
