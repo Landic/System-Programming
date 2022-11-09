@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\User\Desktop\Volkov_HW_36_System\Volkov_HW_36_System\main.cpp(15,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_36_System\Volkov_HW_36_System\main.cpp(46,31): warning C4018: '<=': signed/unsigned mismatch
+  Volkov_HW_36_System.vcxproj -> C:\Users\User\Desktop\Volkov_HW_36_System\Debug\Volkov_HW_36_System.exe
