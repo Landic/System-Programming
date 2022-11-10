@@ -3,8 +3,8 @@
 // Used by Volkov_HW_35_System.rc
 //
 #define IDD_DIALOG1                     107
-#define IDB_BITMAP1                     108
-#define IDB_BITMAP2                     109
+#define IDB_BITMAP3                     110
+#define IDB_BITMAP4                     111
 #define IDC_RADIO1                      1001
 #define IDC_RADIO2                      1002
 #define IDC_RADIO3                      1003
@@ -39,14 +39,19 @@
 #define IDC_CHECK8                      1034
 #define IDC_EDIT2                       1035
 #define IDC_EDIT3                       1036
+#define IDC_PROGRESS2                   1038
+#define IDC_SPIN1                       1039
+#define IDC_EDIT1                       1040
+#define IDC_SPIN2                       1041
+#define IDC_EDIT4                       1042
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        110
+#define _APS_NEXT_RESOURCE_VALUE        112
 #define _APS_NEXT_COMMAND_VALUE         40001
-#define _APS_NEXT_CONTROL_VALUE         1037
+#define _APS_NEXT_CONTROL_VALUE         1041
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

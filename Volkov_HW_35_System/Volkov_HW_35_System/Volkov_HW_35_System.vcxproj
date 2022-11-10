@@ -136,8 +136,8 @@
     <ResourceCompile Include="Volkov_HW_35_System.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\1.bmp" />
-    <Image Include="..\..\2.bmp" />
+    <Image Include="1.bmp" />
+    <Image Include="2.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
