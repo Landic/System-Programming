@@ -154,6 +154,20 @@ IDB_BITMAP3             BITMAP                  "1.bmp"
 
 IDB_BITMAP4             BITMAP                  "2.bmp"
 
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Exit",                        ID_MENU_EXIT
+    END
+END
+
 #endif    // Russian (Russia) resources
 /////////////////////////////////////////////////////////////////////////////
 

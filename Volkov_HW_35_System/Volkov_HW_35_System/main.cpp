@@ -9,7 +9,8 @@
 
 BOOL CALLBACK DlgProc(HWND, UINT, WPARAM, LPARAM);
 
-HWND hEdit1, hEdit2, hProgress, hDialog, hSpin1, hEdit3,hEdit4, hSpin2;
+HWND hEdit1, hEdit2, hProgress, hDialog, hSpin1, hEdit3,hEdit4, hSpin2, hStatus;
+BOOL bShowStatusBar;
 
 int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInst, LPTSTR lpszCmdLine, int nCmdShow)
 {
@@ -21,6 +22,7 @@ BOOL CALLBACK DlgProc(HWND hWnd, UINT message, WPARAM wp, LPARAM lp)
 	short score = 0;
 	double procent = 0;
 	int question = 16;
+	bShowStatusBar = TRUE;
 	switch (message)
 	{
 	case WM_CLOSE:
@@ -49,6 +51,9 @@ BOOL CALLBACK DlgProc(HWND hWnd, UINT message, WPARAM wp, LPARAM lp)
 		UDACCEL pAcceleration2[3] = { {1,1}, {3,10}, {3,50} };
 		SendMessage(hSpin2, UDM_SETACCEL, 3, LPARAM(pAcceleration2));
 		SendMessage(hSpin2, UDM_SETBUDDY, WPARAM(hEdit4), 0);
+		hStatus = CreateStatusWindow(WS_CHILD | WS_VISIBLE | CCS_BOTTOM | SBARS_TOOLTIPS | SBARS_SIZEGRIP, 0, hDialog, WM_USER);
+		HMENU hMenu = LoadMenu(GetModuleHandle(NULL), MAKEINTRESOURCE(IDR_MENU1));
+		SetMenu(hDialog, hMenu);
 		return TRUE;
 	}
 	case WM_COMMAND:
@@ -60,6 +65,9 @@ BOOL CALLBACK DlgProc(HWND hWnd, UINT message, WPARAM wp, LPARAM lp)
 		TCHAR str2[10];
 		TCHAR str3[10];
 		TCHAR str4[10];
+		if (LOWORD(wp) == ID_MENU_EXIT) {
+			EndDialog(hWnd, 0);
+		}
 		if (wp == IDOK) {
 			LRESULT res = SendDlgItemMessage(hWnd, IDC_RADIO1, BM_GETCHECK, 0, 0);;
 			if (res == BST_CHECKED) {
