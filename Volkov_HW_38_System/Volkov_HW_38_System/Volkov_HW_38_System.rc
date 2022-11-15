@@ -1,0 +1,120 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 231, 272
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "2+2",IDC_STATIC,6,6,78,66
+    CONTROL         "2",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,18,20,10
+    CONTROL         "7",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,12,36,20,10
+    CONTROL         "4",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,12,54,20,10
+    GROUPBOX        "Кто ты",IDC_STATIC,6,78,78,66
+    CONTROL         "Рептилоид",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,90,53,10
+    CONTROL         "Динозавр",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,12,108,49,10
+    CONTROL         "Человек",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,12,126,45,10
+    GROUPBOX        "Коты любят молоко?",IDC_STATIC,6,150,78,66
+    CONTROL         "Да",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,162,25,10
+    CONTROL         "Нет",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,12,180,29,10
+    CONTROL         "Не знаю",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,12,198,44,10
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | PBS_SMOOTHREVERSE | WS_BORDER,6,240,209,14
+    PUSHBUTTON      "Закончить",IDC_BUTTON1,168,222,50,14
+    EDITTEXT        IDC_EDIT2,96,24,126,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Время",IDC_STATIC,96,12,21,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 265
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

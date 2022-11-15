@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\User\Desktop\Volkov_HW_38_System\Volkov_HW_38_System\main.cpp(6,9): error C2653: 'CMultithreadDlg': is not a class or namespace name
+C:\Users\User\Desktop\Volkov_HW_38_System\Volkov_HW_38_System\main.cpp(6,9): error C2065: 'DlgProc': undeclared identifier
+  Quest.cpp
+C:\Users\User\Desktop\Volkov_HW_38_System\Volkov_HW_38_System\Quest.cpp(59,33): error C2065: 'hList': undeclared identifier
+C:\Users\User\Desktop\Volkov_HW_38_System\Volkov_HW_38_System\Quest.cpp(60,33): error C2065: 'hList': undeclared identifier
+  Generating Code...
