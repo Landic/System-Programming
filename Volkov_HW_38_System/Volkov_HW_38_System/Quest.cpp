@@ -19,6 +19,9 @@ void Quest::Cls_OnClose(HWND hwnd)
 
 DWORD WINAPI Thread1(LPVOID lp)
 {
+	DWORD Priority = GetPriorityClass(GetCurrentProcess());
+	SetPriorityClass(GetCurrentProcess(), ABOVE_NORMAL_PRIORITY_CLASS);
+	SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_ABOVE_NORMAL);
 	HWND Progress = (HWND)lp;
 	while (true) {
 		static time_t t;
@@ -29,6 +32,7 @@ DWORD WINAPI Thread1(LPVOID lp)
 		SetWindowText(Progress, str);
 		Sleep(1000);
 	}
+	SetPriorityClass(GetCurrentProcess(), Priority);
 	return 0;
 }
 

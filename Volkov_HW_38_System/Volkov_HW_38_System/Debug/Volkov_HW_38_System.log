@@ -1,4 +1,6 @@
-﻿  Quest.cpp
-C:\Users\User\Desktop\Volkov_HW_38_System\Volkov_HW_38_System\Quest.cpp(66,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_HW_38_System\Volkov_HW_38_System\Quest.cpp(67,9): warning C4101: 'str': unreferenced local variable
-  Volkov_HW_38_System.vcxproj -> C:\Users\User\Desktop\Volkov_HW_38_System\Debug\Volkov_HW_38_System.exe
+﻿  main.cpp
+  Quest.cpp
+C:\Users\User\Desktop\System_Programming\Volkov_HW_38_System\Volkov_HW_38_System\Quest.cpp(70,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_HW_38_System\Volkov_HW_38_System\Quest.cpp(71,9): warning C4101: 'str': unreferenced local variable
+  Generating Code...
+  Volkov_HW_38_System.vcxproj -> C:\Users\User\Desktop\System_Programming\Volkov_HW_38_System\Debug\Volkov_HW_38_System.exe
