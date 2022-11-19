@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\User\Desktop\17.11 снимок процессов\Project1\Source.cpp(25,9): warning C4244: 'return': conversion from 'INT_PTR' to 'int', possible loss of data
+C:\Users\User\Desktop\17.11 снимок процессов\Project1\Source.cpp(74,15): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\User\Desktop\17.11 снимок процессов\Project1\Source.cpp(96,15): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
+  Project1.vcxproj -> C:\Users\User\Desktop\17.11 снимок процессов\x64\Debug\Project1.exe
