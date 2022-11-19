@@ -17,7 +17,7 @@ void Quest::Cls_OnClose(HWND hwnd)
 	EndDialog(hwnd, 0);
 }
 
-DWORD WINAPI Thread1(LPVOID lp)
+DWORD WINAPI Thread(LPVOID lp)
 {
 	DWORD Priority = GetPriorityClass(GetCurrentProcess());
 	SetPriorityClass(GetCurrentProcess(), ABOVE_NORMAL_PRIORITY_CLASS);
@@ -45,7 +45,7 @@ BOOL Quest::Cls_OnInitDialog(HWND hwnd, HWND hwndFocus, LPARAM lParam)
 	SendMessage(hProgress, PBM_SETSTEP, 0, 0); // Установка шага приращения  индикатора 
 	SendMessage(hProgress, PBM_SETPOS, 0, 0); // Установка текущей позиции индикатора
 	SendMessage(hProgress, PBM_SETBARCOLOR, 0, LPARAM(RGB(0, 214, 120))); // установил цвет
-	CreateThread(NULL, 0, Thread1, hEdit, 0, NULL);
+	CreateThread(NULL, 0, Thread, hEdit, 0, NULL);
 	return TRUE;
 }
 
