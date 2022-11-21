@@ -1,15 +1,19 @@
-#pragma once
-#pragma comment (lib, "Volkov_HW_40_System")
+
 #include <iostream>
 #include <Windows.h>
+#include <tchar.h>
 
 using namespace std;
-
-#include "../Volkov_HW_40_System/Calculator_Library.h"
+typedef int (*FOO_IN_DLL)(int, int*, int);
 
 int main()
 {
-	int menu = 0, number1 = 0,number2 = 0,summa = 0, choose = 0;
+	HINSTANCE hInstLib = LoadLibrary(TEXT("Volkov_HW_40_System.dll"));
+	if (hInstLib == NULL) {
+		cout << "Can`t load library MyFirstDll.dll" << endl;
+		return 0;
+	}
+	int menu = 0, number1 = 0, number2 = 0, summa = 1, choose = 0;
 	do {
 		cout << "1. Summa" << endl;
 		cout << "2. Minus" << endl;
@@ -28,17 +32,49 @@ int main()
 		system("cls");
 		switch (choose) {
 		case 1:
-			Sum(number1, summa, number2);
+		{
+			FOO_IN_DLL DllFoo1 = (FOO_IN_DLL)GetProcAddress(hInstLib, "Sum");
+			if (DllFoo1 == NULL) {
+				cout << "Error" << endl;
+			}
+			else {
+				DllFoo1(number1, &summa, number2);
+			}
 			break;
+		}
 		case 2:
-			Min(number1, summa, number2);
+		{
+			FOO_IN_DLL DllFoo2 = (FOO_IN_DLL)GetProcAddress(hInstLib, "Min");
+			if (DllFoo2 == NULL) {
+				cout << "Error" << endl;
+			}
+			else {
+				DllFoo2(number1, &summa, number2);
+			}
 			break;
+		}
 		case 3:
-			Mult(number1, summa, number2);
+		{
+			FOO_IN_DLL DllFoo3 = (FOO_IN_DLL)GetProcAddress(hInstLib, "Mult");
+			if (DllFoo3 == NULL) {
+				cout << "Error" << endl;
+			}
+			else {
+				DllFoo3(number1, &summa, number2);
+			}
 			break;
+		}
 		case 4:
-			Div(number1, summa, number2);
+		{
+			FOO_IN_DLL DllFoo4 = (FOO_IN_DLL)GetProcAddress(hInstLib, "Div");
+			if (DllFoo4 == NULL) {
+				cout << "Error" << endl;
+			}
+			else {
+				DllFoo4(number1, &summa, number2);
+			}
 			break;
+		}
 		case 5:
 			cout << "Exit... " << endl;
 			Sleep(1000);

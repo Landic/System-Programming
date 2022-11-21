@@ -11,28 +11,32 @@ bool Div_Zero(int number1, int number2)
 	return false;
 }
 
-CalculatorDll_API void Sum(int number1, int& summ, int number2)
+CalculatorDll_API int Sum(int number1, int* summ, int number2)
 {
-	summ = number1 + number2;
+	*summ = number1 + number2;
+	return *summ;
 }
 
-CalculatorDll_API void Min(int number1, int& summ, int number2)
+CalculatorDll_API int Min(int number1, int* summ, int number2)
 {
-	summ = number1 - number2;
+	*summ = number1 - number2;
+	return *summ;
 }
 
-CalculatorDll_API void Mult(int number1, int& summ, int number2)
+CalculatorDll_API int Mult(int number1, int* summ, int number2)
 {
-	summ = number1 * number2;
+	*summ = number1 * number2;
+	return *summ;
 }
 
-CalculatorDll_API void Div(int number1, int& summ, int number2)
+CalculatorDll_API int Div(int number1, int* summ, int number2)
 {
 	if (Div_Zero(number1, number2) == true) {
 		cout << "Division by zero is not possible" << endl;
 	}
 	else {
-		summ = number1 / number2;
+		*summ = number1 / number2;
+		return *summ;
 	}
 }
 

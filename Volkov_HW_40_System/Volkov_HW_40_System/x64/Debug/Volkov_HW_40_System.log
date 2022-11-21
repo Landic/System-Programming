@@ -1,2 +1,3 @@
 ﻿  Calculator_Library.cpp
-  Volkov_HW_40_System.vcxproj -> C:\Users\User\Desktop\Volkov_HW_40_System\x64\Debug\Volkov_HW_40_System.dll
+C:\Users\User\Desktop\System_Programming\Volkov_HW_40_System\Volkov_HW_40_System\Calculator_Library.cpp(41): warning C4715: 'Div': not all control paths return a value
+  Volkov_HW_40_System.vcxproj -> C:\Users\User\Desktop\System_Programming\Volkov_HW_40_System\x64\Debug\Volkov_HW_40_System.dll
