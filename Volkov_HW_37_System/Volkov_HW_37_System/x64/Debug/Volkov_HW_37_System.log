@@ -1,0 +1,13 @@
+﻿  Dialog1.cpp
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog1.cpp(42,25): error C2664: 'HWND CreateDialogParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': cannot convert argument 4 from 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' to 'DLGPROC'
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog1.cpp(42,25): message : None of the functions with this name in scope match the target type
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4997,1): message : see declaration of 'CreateDialogParamW'
+  Dialog2.cpp
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog2.cpp(37,12): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog2.cpp(40,22): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog2.cpp(36,8): warning C4101: 'str': unreferenced local variable
+  main.cpp
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\main.cpp(6,9): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': cannot convert argument 4 from 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' to 'DLGPROC'
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\main.cpp(6,9): message : None of the functions with this name in scope match the target type
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(5065,1): message : see declaration of 'DialogBoxParamW'
+  Generating Code...

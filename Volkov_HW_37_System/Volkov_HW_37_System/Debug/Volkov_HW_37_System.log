@@ -1,0 +1,7 @@
+﻿  Dialog2.cpp
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog2.cpp(83,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog2.cpp(92,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog2.cpp(99,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog2.cpp(106,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\Volkov_HW_37_System\Volkov_HW_37_System\Dialog2.cpp(115,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Volkov_HW_37_System.vcxproj -> C:\Users\User\Desktop\Volkov_HW_37_System\Debug\Volkov_HW_37_System.exe
