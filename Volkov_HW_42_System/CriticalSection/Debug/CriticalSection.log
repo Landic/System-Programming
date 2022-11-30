@@ -1,0 +1,6 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  CriticalSectionDlg.cpp
+C:\Users\User\Desktop\CriticalSection\CriticalSection\CriticalSectionDlg.cpp(27,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\User\Desktop\CriticalSection\CriticalSection\CriticalSectionDlg.cpp(29,34): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+C:\Users\User\Desktop\CriticalSection\CriticalSection\CriticalSectionDlg.cpp(52,34): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  CriticalSection.vcxproj -> C:\Users\User\Desktop\CriticalSection\Debug\CriticalSection.exe
