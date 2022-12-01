@@ -1,0 +1,3 @@
+﻿  Read_File.cpp
+C:\Users\User\Desktop\Volkov_HW_43_System\Volkov_HW_Project_Read\Volkov_HW_Project_Read\Read_File.cpp(45,47): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  Volkov_HW_Project_Read.vcxproj -> C:\Users\User\Desktop\Volkov_HW_43_System\Volkov_HW_Project_Read\Debug\Volkov_HW_Project_Read.exe

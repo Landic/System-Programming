@@ -1,0 +1,3 @@
+﻿  Write.cpp
+C:\Users\User\Desktop\Volkov_HW_43_System\Volkov_HW_Project_Write\Volkov_HW_Project_Write\Write.cpp(38,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Volkov_HW_Project_Write.vcxproj -> C:\Users\User\Desktop\Volkov_HW_43_System\Volkov_HW_Project_Write\Debug\Volkov_HW_Project_Write.exe
