@@ -1,0 +1,263 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 291, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Keyboard Traines"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,12,6,270,29,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    PUSHBUTTON      "`",IDC_BUTTON1,12,42,18,14,WS_DISABLED
+    PUSHBUTTON      "1",IDC_1,30,42,18,14,WS_DISABLED
+    PUSHBUTTON      "2",IDC_2,48,42,18,14,WS_DISABLED
+    PUSHBUTTON      "3",IDC_3,66,42,18,14,WS_DISABLED
+    PUSHBUTTON      "4",IDC_4,84,42,18,14,WS_DISABLED
+    PUSHBUTTON      "5",IDC_5,102,42,18,14,WS_DISABLED
+    PUSHBUTTON      "6",IDC_6,120,42,18,14,WS_DISABLED
+    PUSHBUTTON      "7",IDC_7,138,42,18,14,WS_DISABLED
+    PUSHBUTTON      "8",IDC_8,156,42,18,14,WS_DISABLED
+    PUSHBUTTON      "9",IDC_9,174,42,18,14,WS_DISABLED
+    PUSHBUTTON      "0",IDC_10,192,42,18,14,WS_DISABLED
+    PUSHBUTTON      "-_",IDC_BUTTON13,210,42,18,14,WS_DISABLED
+    PUSHBUTTON      "=+",IDC_BUTTON14,228,42,18,14,WS_DISABLED
+    PUSHBUTTON      "<-",IDC_BUTTON15,246,42,36,14,WS_DISABLED
+    PUSHBUTTON      "|\\",IDC_BUTTON16,252,60,30,14,WS_DISABLED
+    PUSHBUTTON      "ENTER",IDC_BUTTON17,240,78,42,14,WS_DISABLED
+    PUSHBUTTON      "SHIFT",IDC_BUTTON18,228,96,54,14,WS_DISABLED
+    PUSHBUTTON      "TAB",IDC_BUTTON19,12,60,24,14,WS_DISABLED
+    PUSHBUTTON      "CAPS",IDC_BUTTON20,12,78,30,14,WS_DISABLED
+    PUSHBUTTON      "SHIFT",IDC_BUTTON21,12,96,36,14,WS_DISABLED
+    PUSHBUTTON      "Q",IDC_11,36,60,18,14,WS_DISABLED
+    PUSHBUTTON      "W",IDC_12,54,60,18,14,WS_DISABLED
+    PUSHBUTTON      "A",IDC_21,42,78,18,14,WS_DISABLED
+    PUSHBUTTON      "S",IDC_22,60,78,18,14,WS_DISABLED
+    PUSHBUTTON      "D",IDC_23,78,78,18,14,WS_DISABLED
+    PUSHBUTTON      "E",IDC_13,72,60,18,14,WS_DISABLED
+    PUSHBUTTON      "R",IDC_14,90,60,18,14,WS_DISABLED
+    PUSHBUTTON      "T",IDC_15,108,60,18,14,WS_DISABLED
+    PUSHBUTTON      "Y",IDC_16,126,60,18,14,WS_DISABLED
+    PUSHBUTTON      "U",IDC_17,144,60,18,14,WS_DISABLED
+    PUSHBUTTON      "I",IDC_18,162,60,18,14,WS_DISABLED
+    PUSHBUTTON      "O",IDC_19,180,60,18,14,WS_DISABLED
+    PUSHBUTTON      "P",IDC_20,198,60,18,14,WS_DISABLED
+    PUSHBUTTON      "[",IDC_BUTTON35,216,60,18,14,WS_DISABLED
+    PUSHBUTTON      "]",IDC_BUTTON36,234,60,18,14,WS_DISABLED
+    PUSHBUTTON      "F",IDC_24,96,78,18,14,WS_DISABLED
+    PUSHBUTTON      "G",IDC_25,114,78,18,14,WS_DISABLED
+    PUSHBUTTON      "H",IDC_26,132,78,18,14,WS_DISABLED
+    PUSHBUTTON      "J",IDC_27,150,78,18,14,WS_DISABLED
+    PUSHBUTTON      "K",IDC_28,168,78,18,14,WS_DISABLED
+    PUSHBUTTON      "L",IDC_29,186,78,18,14,WS_DISABLED
+    PUSHBUTTON      ";",IDC_BUTTON43,204,78,18,14,WS_DISABLED
+    PUSHBUTTON      "'""",IDC_BUTTON44,222,78,18,14,WS_DISABLED
+    PUSHBUTTON      "Z",IDC_30,48,96,18,14,WS_DISABLED
+    PUSHBUTTON      "X",IDC_31,66,96,18,14,WS_DISABLED
+    PUSHBUTTON      "C",IDC_32,84,96,18,14,WS_DISABLED
+    PUSHBUTTON      "V",IDC_33,102,96,18,14,WS_DISABLED
+    PUSHBUTTON      "B",IDC_34,120,96,18,14,WS_DISABLED
+    PUSHBUTTON      "N",IDC_35,138,96,18,14,WS_DISABLED
+    PUSHBUTTON      "M",IDC_36,156,96,18,14,WS_DISABLED
+    PUSHBUTTON      ",",IDC_37,174,96,18,14,WS_DISABLED
+    PUSHBUTTON      ".",IDC_38,192,96,18,14,WS_DISABLED
+    PUSHBUTTON      "?",IDC_BUTTON54,210,96,18,14,WS_DISABLED
+    PUSHBUTTON      "CTRL",IDC_BUTTON55,12,114,24,14,WS_DISABLED
+    PUSHBUTTON      "WIN",IDC_BUTTON56,36,114,24,14,WS_DISABLED
+    PUSHBUTTON      "ALT",IDC_BUTTON57,60,114,24,14,WS_DISABLED
+    PUSHBUTTON      "SPACE",IDC_39,84,114,102,14,WS_DISABLED
+    PUSHBUTTON      "ALT",IDC_BUTTON59,186,114,24,14,WS_DISABLED
+    PUSHBUTTON      "FN",IDC_BUTTON60,210,114,24,14,WS_DISABLED
+    PUSHBUTTON      "WIN",IDC_BUTTON61,234,114,24,14,WS_DISABLED
+    PUSHBUTTON      "CTRL",IDC_BUTTON62,258,114,24,14,WS_DISABLED
+    EDITTEXT        IDC_HIT,66,138,40,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    EDITTEXT        IDC_SPM,126,138,40,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    EDITTEXT        IDC_TIMER,186,138,40,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    LTEXT           "Time",IDC_STATIC,198,132,16,8,WS_DISABLED
+    LTEXT           "SPM",IDC_STATIC,138,132,14,8,WS_DISABLED
+    LTEXT           "Hit the keys",IDC_STATIC,66,132,39,8,WS_DISABLED
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | PBS_SMOOTHREVERSE | WS_BORDER,12,156,270,14
+    LTEXT           "Progress",IDC_STATIC,12,144,29,8,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    100, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "C:\\Users\\User\\Desktop\\114683.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG1                PNG                     "114683.png"
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
