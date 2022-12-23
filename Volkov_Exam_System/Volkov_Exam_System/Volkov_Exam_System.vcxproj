@@ -139,6 +139,7 @@
     <ResourceCompile Include="Volkov_Exam_System.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\114683.ico" />
     <Image Include="..\..\114683.ico" />
     <Image Include="..\..\icon2.ico" />
     <Image Include="114683.png" />

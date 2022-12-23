@@ -10,11 +10,14 @@ int Keyboard_Traines::count = 0;
 bool Timer = false;
 short minute = 0, sec = 1;
 float procent_minus = 0, wrong = 0, procent = 100;
-int spm = 1;
+float spm = 0;
+int symbols = 0;
+short x = 0;
 float time1 = 0;
 int progress = 0;
 int score = 0;
 short level = 0;
+short start = 0;
 
 
 Keyboard_Traines::Keyboard_Traines(void)
@@ -122,6 +125,10 @@ void Keyboard_Traines::Cls_OnCommand(HWND hwnd, int id, HWND hwndCtl, UINT codeN
 void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 {
 	if (wParam == VK_SHIFT) { // если нажимается Shift то игра начинается
+		if (start == 0) {
+			hThreadtime = CreateThread(NULL, 1, ThreadTime, hEditTimer, 0, NULL); // создаем поток с таймером
+			start++;
+		}
 		if (level == 0) { // первый уровень
 			SetWindowText(hEdit1, TEXT("Hello world"));
 		}
@@ -135,12 +142,13 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 		count = 0; // обнуляем размер строки
 		procent = 100; // возвращаем процент
 		progress = 0; // обнуляем прогресс
+		symbols = 0;
 		score = 0; // обнуляем очки
 		count += wcslen(text); // прибавляем размер строки в глобальную перменную
 		SetWindowText(hEditHit, TEXT("100%")); // устанавливаем по дефолту 100 процентов попадание по клавишам если не попадает уменьшается
 		SetWindowText(hEditSpm, TEXT("0")); // счетчик по умолчанию ноль
 		Timer = false; // таймер фолс 
-		hThreadtime = CreateThread(NULL, 0, ThreadTime, hEditTimer, 0, NULL); // создаем поток с таймером
+		x++;
 		i = 0; // обнуляем счетчик для строки
 		wrong = 0; // обнуляем ошибки
 		procent_minus = 0; // обнуляем процент для отнимания
@@ -154,11 +162,11 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			score++; // очки увеличиваются
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
-			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
-			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
-			SetWindowText(hEditSpm, str); // передается в эдит контроль
+			TCHAR str1[20]; // создается строка
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
+			_stprintf_s(str1, TEXT("%.2f"), spm); // передается в строку
+			SetWindowText(hEditSpm, str1); // передается в эдит контроль
 		}
 		else { // если не верно
 			wrong++; // увеличивается ошибка на один
@@ -178,8 +186,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -201,8 +209,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -224,8 +232,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -247,8 +255,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -270,8 +278,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -293,8 +301,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -316,8 +324,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -339,8 +347,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -362,8 +370,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -385,8 +393,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -408,8 +416,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -431,8 +439,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -454,8 +462,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -477,8 +485,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -500,8 +508,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -523,8 +531,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -546,8 +554,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -569,8 +577,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -592,8 +600,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -615,8 +623,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -638,8 +646,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -661,8 +669,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -684,8 +692,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -707,8 +715,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -730,8 +738,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -753,8 +761,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -776,8 +784,8 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 			progress = (score * 100) / count; // прогрес увеличивается
 			SendMessage(hProgress, PBM_SETPOS, WPARAM(progress), 0); // прогресс передается progress control
 			TCHAR str[20]; // создается строка
-			spm++; // увеличивается счетчик
-			spm *= sec; // умножается на секунды
+			symbols++; // увеличивается счетчик
+			spm = (symbols * 60) / sec; // умножается на секунды
 			_stprintf_s(str, TEXT("%.2f"), spm); // передается в строку
 			SetWindowText(hEditSpm, str); // передается в эдит контроль
 		}
@@ -791,11 +799,19 @@ void Keyboard_Traines::Cls_OnCheck(WPARAM wParam, LPARAM lParam)
 		}
 	}
 	if (text[i] == '\0') { // если доходит до нулл терминатора то спрашивает следующий уровень или нет
-		SetWindowText(hEdit1, TEXT("Next level? Press Shift"));
-		level++;
+		TCHAR str[250];
 		Timer = true; // таймер останавливает если тру
+		sec = 0;
+		minute = 0;
+		_stprintf_s(str, TEXT("Procent to hit: %.2f%%, SPM: %.2f"), procent, spm);
+		MessageBox(0, str, TEXT("Level complete"), MB_OK | MB_ICONINFORMATION);
+		SetWindowText(hEdit1, TEXT("Start new level? Press Shift"));
+		level++;
 		if (level == 3) { // если лвл 3 то тренировка выполнена
 			MessageBox(0, TEXT("You completed the traines"), TEXT("End"), MB_OK);
+			SetWindowText(hEdit1, TEXT("Again? Press Shift"));
+			x = 0;
+			level = 0;
 		}
 	}
 	TCHAR buffer[40];

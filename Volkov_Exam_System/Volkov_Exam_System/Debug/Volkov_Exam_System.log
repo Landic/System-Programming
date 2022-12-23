@@ -1,58 +1,30 @@
 ﻿  Keyboard_Traines.cpp
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(174,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(178,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(200,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(204,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(226,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(230,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(252,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(256,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(278,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(282,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(304,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(308,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(330,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(334,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(356,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(360,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(382,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(386,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(408,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(412,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(434,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(438,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(460,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(464,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(486,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(490,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(512,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(516,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(538,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(542,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(564,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(568,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(590,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(594,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(616,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(620,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(642,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(646,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(668,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(672,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(694,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(698,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(720,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(724,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(746,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(750,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(772,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(776,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(798,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(802,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(824,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(828,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(850,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(854,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(876,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(880,21): warning C4477: 'swprintf_s' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'int'
-  Volkov_Exam_System.vcxproj -> C:\Users\User\Desktop\Volkov_Exam_System\Debug\Volkov_Exam_System.exe
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(167,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(190,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(213,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(236,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(259,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(282,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(305,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(328,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(351,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(374,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(397,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(420,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(443,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(466,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(489,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(512,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(535,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(558,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(581,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(604,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(627,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(650,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(673,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(696,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(719,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(742,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(765,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Volkov_Exam_System\Keyboard_Traines.cpp(788,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Volkov_Exam_System.vcxproj -> C:\Users\User\Desktop\System_Programming\Volkov_Exam_System\Debug\Volkov_Exam_System.exe
